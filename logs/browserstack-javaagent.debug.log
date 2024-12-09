@@ -1,0 +1,506 @@
+11:19:33.992 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=C\:\\Users\\Admin\\Desktop\\BsSdk, idea.version=2022.3.2, browserstack.config=browserstack.yml, browser=Chrome, groups=smoke, qtest=true, config=stage_desktop_chrome, localrepository=C\:\\Users\\Admin\\.m2\\repository}
+11:19:34.579 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+11:19:34.579 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+11:19:34.584 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire-20241209111933323_1tmp
+11:19:34.584 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire-20241209111933323_1tmp
+11:19:34.584 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.26.4
+11:19:34.586 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+11:19:34.587 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+11:19:34.587 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+11:19:34.587 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+11:19:34.919 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-use.browserstack.com","hub-usw.browserstack.com","hub-euw.browserstack.com"]
+11:19:35.179 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 258ms
+11:19:35.604 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-usw.browserstack.com HUB IS: 419ms
+11:19:36.285 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 679ms
+11:19:36.287 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-use.browserstack.com
+11:19:36.303 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"product":"[automate, observability]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"ecee06ea-2836-4bce-9d4b-568bf3db926b","buildIdentifier":"09-Dec-11:19","userFramework":"testng","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"testng","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":true,"turboscale":false},"referrer":"testng-javaagent\/1.26.4","hostname":"NDovhoshyyaL","language_framework":"java_testng","detectedFramework":"none","detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:19:36.721 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+11:19:36.735 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+11:19:36.735 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 756
+11:19:36.735 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v2/builds with request size 756
+11:19:37.233 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:19:37.234 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:19:37.234 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : rg52ntpweyycdjb5mj1h39coqwsaxj8rrcicabiy
+11:19:37.234 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+11:19:37.583 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+11:19:37.585 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+11:19:37.586 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+11:19:37.587 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/rg52ntpweyycdjb5mj1h39coqwsaxj8rrcicabiy/stop with request size 65
+11:19:37.587 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/rg52ntpweyycdjb5mj1h39coqwsaxj8rrcicabiy/stop with request size 65
+11:19:37.630 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:19:37.630 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:19:37.630 [Thread-0] DEBUG com.browserstack.testOps.Listener - Testhub stop response: 
+11:19:37.633 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse data from processes. Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getFormattedDataFromProcesses(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+11:19:37.633 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+11:19:37.633 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getEventStats: Getting event data for TestObservability
+11:19:37.637 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - [OBSERVABILITY] Failed to parse data from workers
+11:19:37.682 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"ecee06ea-2836-4bce-9d4b-568bf3db926b","buildIdentifier":"09-Dec-11:19","testhub_uuid":"rg52ntpweyycdjb5mj1h39coqwsaxj8rrcicabiy","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":true,"turboscale":false},"hostname":"NDovhoshyyaL","measures":{"sdk:setup":3430},"productUsage":{"testObservability":{"buildHashedId":"rg52ntpweyycdjb5mj1h39coqwsaxj8rrcicabiy","manuallySet":true,"enabled":true,"events":{"hookEvents":{"started":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"finished":{"triggeredCount":0,"failedCount":0,"errors":[],"sentCount":0}},"logEvents":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"testEvents":{"started":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"finished":{"triggeredCount":0,"failedCount":0,"errors":[],"sentCount":0}},"batchEvents":{"triggeredCount":0,"failedCount":0,"errors":[],"sentCount":0},"cbtSessionEvents":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"buildEvents":{"started":{"triggered":true,"status":"success","error":null},"finished":{"triggered":true,"status":"success","error":null}}}}},"browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"serenityOverridePlugin":false,"skipSessionName":true,"skipSessionStatus":true},"platforms":[{"browserVersion":"127","browser":"Chrome","osVersion":"11","os":"Windows","device":null,"platformString":"Windows, 11, Chrome, 127","platformCaps":{"os":"Windows","osVersion":11,"browserVersion":127,"browserName":"Chrome"},"capabilities":{},"customVariables":"****"}],"parallelsPerPlatform":1,"framework":"testng","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"percyBuildId":null,"product":"[automate, observability]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{"ret-org.openqa.selenium.remote.RemoteWebDriver":231,"retransformClasses":231},"userFramework":"testng","detectedDependencies":"testng","referrer":"testng-javaagent\/1.26.4","locationTrigger":"BSTACK_BUILD_END","language_framework":"java_testng","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:19:37.882 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+11:19:38.311 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+11:20:11.928 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=C\:\\Users\\Admin\\Desktop\\BsSdk, idea.version=2022.3.2, browserstack.config=browserstack.yml, browser=Chrome, groups=smoke, qtest=true, config=stage_desktop_chrome, localrepository=C\:\\Users\\Admin\\.m2\\repository}
+11:20:12.500 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+11:20:12.500 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+11:20:12.504 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire-20241209112011029_1tmp
+11:20:12.504 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire-20241209112011029_1tmp
+11:20:12.504 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.26.4
+11:20:12.506 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+11:20:12.507 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+11:20:12.507 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+11:20:12.507 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+11:20:12.831 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-use.browserstack.com","hub-usw.browserstack.com","hub-euw.browserstack.com"]
+11:20:13.083 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 251ms
+11:20:13.470 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-usw.browserstack.com HUB IS: 383ms
+11:20:14.123 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 652ms
+11:20:14.124 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-use.browserstack.com
+11:20:14.140 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"product":"[automate, observability]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"812de9d0-572e-42ad-9e22-b5647204bce9","buildIdentifier":"09-Dec-11:20","userFramework":"testng","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"testng","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":true,"turboscale":false},"referrer":"testng-javaagent\/1.26.4","hostname":"NDovhoshyyaL","language_framework":"java_testng","detectedFramework":"none","detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:20:14.412 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+11:20:14.429 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+11:20:14.429 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 756
+11:20:14.429 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v2/builds with request size 756
+11:20:14.729 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:20:14.729 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:20:14.731 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : 0zzspwsws10bze4ufwwx6tqcw22kipi09evn2mhy
+11:20:14.731 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+11:20:15.078 [main] DEBUG c.b.t.XMLSuiteClassListener - Number of parallels - 1 and number of platforms - 1
+11:20:15.128 [main] DEBUG c.browserstack.utils.LogReportingAPI - [2024-12-09T17:20:15.128747Z][ OBSERVABILITY ] Processing Logs patching stream
+11:20:15.149 [Surefire test-0@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Event Type :: TestRunStarted, Test ClassName :: BsSdkTest 
+11:20:15.150 [Surefire test-0@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: C:\Users\Admin\Desktop\BsSdk, TestClass :: BsSdkTest
+11:20:15.170 [Surefire test-0@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] The filename fetched :: C:\Users\Admin\Desktop\BsSdk\src\test\java\BsSdkTest.java, fileSeparator :: \, AbsolutePath :: C:\Users\Admin\Desktop\BsSdk\., Normalized Path :: C:\Users\Admin\Desktop\BsSdk, File.Separator :: \
+11:20:15.170 [Surefire test-0@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Replaced File Name is :: BsSdk\src\test\java\BsSdkTest.java, Absolute Path :: C:\Users\Admin\Desktop\BsSdk\.., Normalized Path :: C:\Users\Admin\Desktop 
+11:20:15.173 [Surefire test-0@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind TestRunStarted
+11:20:15.325 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+11:20:15.327 [TestOne@0] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 32
+11:20:15.330 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+11:20:17.186 [pool-2-thread-1] DEBUG c.browserstack.utils.RequestBatcher - Time Since Last Batch Processed 1733764817186
+
+11:20:17.192 [pool-3-thread-1] DEBUG c.browserstack.utils.RequestBatcher - Processing Batch 1
+
+11:20:17.193 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v1/batch with request size 712
+11:20:17.193 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v1/batch with request size 712
+11:20:17.244 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:20:17.246 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:20:17.246 [pool-3-thread-1] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-12-09T17:20:17.246045300Z][ TESTHUB ] Batch event successfull!
+
+11:20:21.190 [pool-2-thread-1] DEBUG c.browserstack.utils.RequestBatcher - Time Since Last Batch Processed 4003
+
+11:20:25.185 [pool-2-thread-1] DEBUG c.browserstack.utils.RequestBatcher - Time Since Last Batch Processed 3995
+
+11:20:27.190 [pool-2-thread-1] DEBUG c.browserstack.utils.RequestBatcher - Time Since Last Batch Processed 2005
+
+11:20:28.504 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-use.browserstack.com
+11:20:28.504 [TestOne@0] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+11:20:28.526 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:20:28.527 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:20:28.527 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:20:28.527 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:20:28.531 [Forwarding get on session ad4fb8ff6a88cba766eb44f755b65e5c6a055ae9 to remote] DEBUG c.browserstack.utils.UtilityMethods - [Error]java.lang.IllegalAccessError: Update to non-static final field org.openqa.selenium.remote.HttpCommandExecutor.client attempted from a different method (execute) than the initializer method <init> 
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at BsSdkTest.TestOne(BsSdkTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11:20:29.845 [TestOne@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind LogCreated
+11:20:29.845 [TestOne@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind LogCreated
+11:20:29.846 [TestOne@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind LogCreated
+11:20:29.846 [TestOne@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind LogCreated
+11:20:29.846 [TestOne@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind LogCreated
+11:20:29.846 [TestOne@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind LogCreated
+11:20:29.893 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Event Type :: TestRunFinished, Test ClassName :: BsSdkTest 
+11:20:29.893 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: C:\Users\Admin\Desktop\BsSdk, TestClass :: BsSdkTest
+11:20:29.901 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] The filename fetched :: C:\Users\Admin\Desktop\BsSdk\src\test\java\BsSdkTest.java, fileSeparator :: \, AbsolutePath :: C:\Users\Admin\Desktop\BsSdk\., Normalized Path :: C:\Users\Admin\Desktop\BsSdk, File.Separator :: \
+11:20:29.902 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Replaced File Name is :: BsSdk\src\test\java\BsSdkTest.java, Absolute Path :: C:\Users\Admin\Desktop\BsSdk\.., Normalized Path :: C:\Users\Admin\Desktop 
+11:20:29.906 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:20:29.906 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:20:29.906 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:20:29.906 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:20:29.908 [TestOne@0] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Processing Request Kind TestRunFinished
+11:20:29.969 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse data from processes. Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getFormattedDataFromProcesses(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:1213)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1001)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11:20:29.969 [TestOne@0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+11:20:29.969 [TestOne@0] DEBUG com.browserstack.testOps.UsageStats - getEventStats: Getting event data for TestObservability
+11:20:29.973 [TestOne@0] DEBUG com.browserstack.testOps.UsageStats - [OBSERVABILITY] Failed to parse data from workers
+11:20:30.008 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"812de9d0-572e-42ad-9e22-b5647204bce9","buildIdentifier":"09-Dec-11:20","testhub_uuid":"0zzspwsws10bze4ufwwx6tqcw22kipi09evn2mhy","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":true,"turboscale":false},"hostname":"NDovhoshyyaL","measures":{"sdk:setup":3027},"productUsage":{"testObservability":{"buildHashedId":"0zzspwsws10bze4ufwwx6tqcw22kipi09evn2mhy","manuallySet":true,"enabled":true,"events":{"hookEvents":{"started":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"finished":{"triggeredCount":0,"failedCount":0,"errors":[],"sentCount":0}},"logEvents":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":6,"log":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":6}},"testEvents":{"started":{"errors":[],"sentCount":1,"failedCount":0,"triggeredCount":1},"finished":{"triggeredCount":1,"failedCount":0,"errors":[],"sentCount":0},"passed":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":1}},"batchEvents":{"triggeredCount":1,"failedCount":0,"errors":[],"sentCount":1},"cbtSessionEvents":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"buildEvents":{"started":{"error":null,"triggered":true,"status":"success"},"finished":{"error":null,"triggered":null,"status":null}}}}},"browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":true,"skipSessionName":true,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"browser":"Chrome","os":"Windows","device":null,"osVersion":"11","browserVersion":"127","platformCaps":{"os":"Windows","osVersion":11,"browserVersion":127,"browserName":"Chrome"},"platformString":"Windows, 11, Chrome, 127","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"testng","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"percyBuildId":null,"product":"[automate, observability]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{"ret-org.openqa.selenium.remote.RemoteWebDriver":221,"retransformClasses":221},"userFramework":"testng","detectedDependencies":"testng","referrer":"testng-javaagent\/1.26.4","locationTrigger":"onFinish","language_framework":"java_testng","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:20:30.216 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+11:20:30.216 [TestOne@0] DEBUG c.browserstack.utils.LogReportingAPI - sendPlatformDetails: Can't send CBT info, as driver or test is not found
+11:20:30.825 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+11:20:30.825 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+11:20:30.826 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - [2024-12-09T17:20:30.825966700Z][ OBSERVABILITY ] Processing stop observability
+11:20:30.826 [pool-3-thread-1] DEBUG c.browserstack.utils.RequestBatcher - Processing Batch 7
+
+11:20:30.828 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v1/batch with request size 3517
+11:20:30.828 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v1/batch with request size 3517
+11:20:30.879 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:20:30.879 [pool-3-thread-1] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:20:30.879 [pool-3-thread-1] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-12-09T17:20:30.879519900Z][ TESTHUB ] Batch event successfull!
+
+11:20:30.880 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+11:20:30.880 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/0zzspwsws10bze4ufwwx6tqcw22kipi09evn2mhy/stop with request size 65
+11:20:30.880 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/0zzspwsws10bze4ufwwx6tqcw22kipi09evn2mhy/stop with request size 65
+11:20:30.931 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:20:30.931 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:20:30.931 [Thread-0] DEBUG com.browserstack.testOps.Listener - Testhub stop response: 
+11:20:30.935 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse data from processes. Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getFormattedDataFromProcesses(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+11:20:30.935 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+11:20:30.935 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getEventStats: Getting event data for TestObservability
+11:20:30.935 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - [OBSERVABILITY] Failed to parse data from workers
+11:20:30.944 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"812de9d0-572e-42ad-9e22-b5647204bce9","buildIdentifier":"09-Dec-11:20","testhub_uuid":"0zzspwsws10bze4ufwwx6tqcw22kipi09evn2mhy","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":true,"turboscale":false},"hostname":"NDovhoshyyaL","measures":{"sdk:setup":3027},"productUsage":{"testObservability":{"buildHashedId":"0zzspwsws10bze4ufwwx6tqcw22kipi09evn2mhy","manuallySet":true,"enabled":true,"events":{"hookEvents":{"started":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"finished":{"triggeredCount":0,"failedCount":0,"errors":[],"sentCount":0}},"logEvents":{"errors":[],"sentCount":6,"failedCount":0,"triggeredCount":6,"log":{"errors":[],"sentCount":6,"failedCount":0,"triggeredCount":6}},"testEvents":{"started":{"errors":[],"sentCount":1,"failedCount":0,"triggeredCount":1},"finished":{"triggeredCount":1,"failedCount":0,"errors":[],"sentCount":1},"passed":{"errors":[],"sentCount":1,"failedCount":0,"triggeredCount":1}},"batchEvents":{"triggeredCount":2,"failedCount":0,"errors":[],"sentCount":2},"cbtSessionEvents":{"errors":[],"sentCount":0,"failedCount":0,"triggeredCount":0},"buildEvents":{"started":{"error":null,"triggered":true,"status":"success"},"finished":{"error":null,"triggered":true,"status":"success"}}}}},"browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":true,"skipSessionName":true,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"browser":"Chrome","os":"Windows","device":null,"osVersion":"11","browserVersion":"127","platformCaps":{"os":"Windows","osVersion":11,"browserVersion":127,"browserName":"Chrome"},"platformString":"Windows, 11, Chrome, 127","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"testng","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"percyBuildId":null,"product":"[automate, observability]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{"ret-org.openqa.selenium.remote.RemoteWebDriver":221,"retransformClasses":221},"userFramework":"testng","detectedDependencies":"testng","referrer":"testng-javaagent\/1.26.4","locationTrigger":"BSTACK_BUILD_END","language_framework":"java_testng","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:20:31.208 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+11:20:31.664 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+11:24:59.494 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=C\:\\Users\\Admin\\Desktop\\BsSdk, idea.version=2022.3.2, browserstack.config=browserstack.yml, browser=Chrome, groups=smoke, qtest=true, config=stage_desktop_chrome, localrepository=C\:\\Users\\Admin\\.m2\\repository}
+11:25:00.444 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+11:25:00.445 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+11:25:00.449 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire-20241209112458755_1tmp
+11:25:00.449 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire-20241209112458755_1tmp
+11:25:00.449 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.26.4
+11:25:00.452 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+11:25:00.452 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+11:25:00.452 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+11:25:00.452 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+11:25:00.811 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-use.browserstack.com","hub-usw.browserstack.com","hub-euw.browserstack.com"]
+11:25:01.082 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 269ms
+11:25:01.491 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-usw.browserstack.com HUB IS: 406ms
+11:25:02.189 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 696ms
+11:25:02.191 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-use.browserstack.com
+11:25:02.212 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"product":"[automate]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"85f7eb70-1ebe-4e91-82ee-a28e739b480e","buildIdentifier":"09-Dec-11:24","userFramework":"testng","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"testng","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false,"turboscale":false},"referrer":"testng-javaagent\/1.26.4","hostname":"NDovhoshyyaL","language_framework":"java_testng","detectedFramework":"none","detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:25:02.597 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+11:25:02.606 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException
+11:25:02.613 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+11:25:02.619 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 753
+11:25:02.619 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v2/builds with request size 753
+11:25:02.849 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:25:02.850 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:25:02.850 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2
+11:25:02.850 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+11:25:03.270 [main] DEBUG c.b.t.XMLSuiteClassListener - Number of parallels - 1 and number of platforms - 1
+11:25:03.330 [main] DEBUG c.browserstack.utils.LogReportingAPI - [2024-12-09T17:25:03.330905800Z][ OBSERVABILITY ] Processing Logs patching stream
+11:25:03.559 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+11:25:03.561 [TestOne@0] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 32
+11:25:03.564 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+11:26:22.846 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-use.browserstack.com
+11:26:22.846 [TestOne@0] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+11:26:22.865 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:26:22.865 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:26:22.865 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:26:22.865 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:26:22.868 [Forwarding get on session 71d558e7cd26f0d0fe40f34596e8aa8d512ead1a to remote] DEBUG c.browserstack.utils.UtilityMethods - [Error]java.lang.IllegalAccessError: Update to non-static final field org.openqa.selenium.remote.HttpCommandExecutor.client attempted from a different method (execute) than the initializer method <init> 
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at BsSdkTest.TestOne(BsSdkTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11:26:24.246 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Event Type :: TestRunFinished, Test ClassName :: BsSdkTest 
+11:26:24.246 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: C:\Users\Admin\Desktop\BsSdk, TestClass :: BsSdkTest
+11:26:24.259 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] The filename fetched :: C:\Users\Admin\Desktop\BsSdk\src\test\java\BsSdkTest.java, fileSeparator :: \, AbsolutePath :: C:\Users\Admin\Desktop\BsSdk\., Normalized Path :: C:\Users\Admin\Desktop\BsSdk, File.Separator :: \
+11:26:24.259 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Replaced File Name is :: BsSdk\src\test\java\BsSdkTest.java, Absolute Path :: C:\Users\Admin\Desktop\BsSdk\.., Normalized Path :: C:\Users\Admin\Desktop 
+11:26:24.264 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:26:24.264 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:26:24.264 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:26:24.264 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:26:24.320 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse data from processes. Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getFormattedDataFromProcesses(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:1213)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1001)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11:26:24.320 [TestOne@0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+11:26:24.345 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"85f7eb70-1ebe-4e91-82ee-a28e739b480e","buildIdentifier":"09-Dec-11:24","testhub_uuid":"uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"NDovhoshyyaL","measures":{"sdk:setup":3611},"productUsage":{"testObservability":{"buildHashedId":"uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":true},"platforms":[{"browser":"Chrome","osVersion":"11","browserVersion":"127","device":null,"os":"Windows","capabilities":{},"platformCaps":{"os":"Windows","osVersion":11,"browserVersion":127,"browserName":"Chrome"},"platformString":"Windows, 11, Chrome, 127","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"testng","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":false,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"percyBuildId":null,"product":"[automate]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{"ret-org.openqa.selenium.remote.RemoteWebDriver":253,"retransformClasses":254},"userFramework":"testng","detectedDependencies":"testng","referrer":"testng-javaagent\/1.26.4","locationTrigger":"onFinish","language_framework":"java_testng","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:26:24.611 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+11:26:25.499 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+11:26:25.500 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+11:26:25.500 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+11:26:25.500 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2/stop with request size 65
+11:26:25.500 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2/stop with request size 65
+11:26:25.743 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+11:26:25.743 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+11:26:25.743 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+11:26:25.745 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at com.sun.proxy.$Proxy2.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+11:26:25.883 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+11:26:25.883 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2/stop with request size 65
+11:26:25.883 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2/stop with request size 65
+11:26:25.919 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+11:26:25.919 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+11:26:25.919 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+11:26:25.919 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-12-09T17:26:25.919499100Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at com.sun.proxy.$Proxy2.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+11:26:26.054 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+11:26:26.057 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse data from processes. Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getFormattedDataFromProcesses(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+11:26:26.057 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+11:26:26.060 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"85f7eb70-1ebe-4e91-82ee-a28e739b480e","buildIdentifier":"09-Dec-11:24","testhub_uuid":"uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"NDovhoshyyaL","measures":{"sdk:setup":3611},"productUsage":{"testObservability":{"buildHashedId":"uxhk9sjwjhfbu6vjx03t65p3y3vnygshfjmc3rd2","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":true},"platforms":[{"browser":"Chrome","osVersion":"11","browserVersion":"127","device":null,"os":"Windows","capabilities":{},"platformCaps":{"os":"Windows","osVersion":11,"browserVersion":127,"browserName":"Chrome"},"platformString":"Windows, 11, Chrome, 127","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"testng","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":false,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"percyBuildId":null,"product":"[automate]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{"ret-org.openqa.selenium.remote.RemoteWebDriver":253,"retransformClasses":254},"userFramework":"testng","detectedDependencies":"testng","referrer":"testng-javaagent\/1.26.4","locationTrigger":"BSTACK_BUILD_END","language_framework":"java_testng","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:26:26.319 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+11:26:26.812 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.
+11:27:35.821 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=C\:\\Users\\Admin\\Desktop\\BsSdk, idea.version=2022.3.2, browserstack.config=browserstack.yml, browser=Chrome, groups=smoke, qtest=true, config=stage_desktop_chrome, localrepository=C\:\\Users\\Admin\\.m2\\repository}
+11:27:36.362 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to TRACE for logger com.browserstack
+11:27:36.362 [main] DEBUG c.b.logger.BrowserstackLoggerFactory - Log Level set to INFO for logger stdoutPrinter
+11:27:36.367 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Found the configuration path is : surefire-20241209112735158_1tmp
+11:27:36.367 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Coudln't find config path surefire-20241209112735158_1tmp
+11:27:36.367 [main] DEBUG c.browserstack.BrowserStackJavaAgent - JavaAgent Version 1.26.4
+11:27:36.370 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for INT
+11:27:36.370 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for TERM
+11:27:36.370 [main] DEBUG c.b.utils.ExitSignalHandler - Unable to attach signal handler for HUP Unknown signal: HUP
+11:27:36.370 [main] DEBUG c.b.utils.ExitSignalHandler - Registered handler for ABRT
+11:27:36.729 [Thread-1] DEBUG c.browserstack.utils.UtilityMethods - NEXT HUBS ARE: ["hub-use.browserstack.com","hub-usw.browserstack.com","hub-euw.browserstack.com"]
+11:27:37.021 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-use.browserstack.com HUB IS: 288ms
+11:27:37.446 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-usw.browserstack.com HUB IS: 420ms
+11:27:38.155 [main] DEBUG c.browserstack.utils.UtilityMethods - EXECUTION TIME OF hub-euw.browserstack.com HUB IS: 708ms
+11:27:38.157 [main] DEBUG c.browserstack.utils.UtilityMethods - NEAREST HUB ALLOCATED IS - hub-use.browserstack.com
+11:27:38.173 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestAttempted with data: {"event_type":"SDKTestAttempted","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"product":"[automate]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{},"language":"java","sdkRunId":"19d8d35b-b40a-4b8c-b200-263b0b38a246","buildIdentifier":"09-Dec-11:27","userFramework":"testng","testhub_uuid":"","detectedAppiumVersion":"null","detectedDependencies":"testng","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false,"turboscale":false},"referrer":"testng-javaagent\/1.26.4","hostname":"NDovhoshyyaL","language_framework":"java_testng","detectedFramework":"none","detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:27:38.518 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestAttempted response - {"message":"SDK Event recorded successfully"}
+11:27:38.527 [main] DEBUG c.browserstack.utils.UtilityMethods - Exception in getting the framework version. Error: java.lang.NullPointerException
+11:27:38.531 [main] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind launchTestSession
+11:27:38.532 [main] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: POST api/v2/builds with request size 753
+11:27:38.532 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: POST https://collector-observability.browserstack.com/api/v2/builds with request size 753
+11:27:38.761 [main] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 200
+11:27:38.761 [main] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 200
+11:27:38.762 [main] DEBUG com.browserstack.testOps.Listener - BROWSERSTACK_TESTHUB_UUID : oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k
+11:27:38.762 [main] DEBUG com.browserstack.testOps.Listener - [ TESTHUB ] Build creation successfull
+11:27:39.107 [main] DEBUG c.b.t.XMLSuiteClassListener - Number of parallels - 1 and number of platforms - 1
+11:27:39.151 [main] DEBUG c.browserstack.utils.LogReportingAPI - [2024-12-09T17:27:39.151189600Z][ OBSERVABILITY ] Processing Logs patching stream
+11:27:39.339 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+11:27:39.341 [TestOne@0] DEBUG c.b.selenium.SeleniumHandler - beforeDriverInit: SDK enabled. Thread ID: 32
+11:27:39.344 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [Patch]: SDK enabled, patching remote server
+11:27:53.064 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - OPTIMAL HUB IS: hub-use.browserstack.com
+11:27:53.064 [TestOne@0] DEBUG c.b.selenium.SeleniumHandler - afterDriverInit: requested
+11:27:53.084 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:27:53.084 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:27:53.084 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:27:53.084 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:27:53.087 [Forwarding get on session 55972cf34b15f42d423107a41be5a4da74bd6727 to remote] DEBUG c.browserstack.utils.UtilityMethods - [Error]java.lang.IllegalAccessError: Update to non-static final field org.openqa.selenium.remote.HttpCommandExecutor.client attempted from a different method (execute) than the initializer method <init> 
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+	at BsSdkTest.TestOne(BsSdkTest.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11:27:54.704 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Event Type :: TestRunFinished, Test ClassName :: BsSdkTest 
+11:27:54.704 [TestOne@0] DEBUG c.browserstack.utils.UtilityMethods - [findFileMatcher] Current Path is :: C:\Users\Admin\Desktop\BsSdk, TestClass :: BsSdkTest
+11:27:54.716 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] The filename fetched :: C:\Users\Admin\Desktop\BsSdk\src\test\java\BsSdkTest.java, fileSeparator :: \, AbsolutePath :: C:\Users\Admin\Desktop\BsSdk\., Normalized Path :: C:\Users\Admin\Desktop\BsSdk, File.Separator :: \
+11:27:54.716 [TestOne@0] DEBUG c.b.testNgListeners.TestNGUtils - [populateTestDataForBSTestOps] Replaced File Name is :: BsSdk\src\test\java\BsSdkTest.java, Absolute Path :: C:\Users\Admin\Desktop\BsSdk\.., Normalized Path :: C:\Users\Admin\Desktop 
+11:27:54.721 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:27:54.721 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:27:54.721 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Getting Hub url from HttpCommandExecutor
+11:27:54.721 [TestOne@0] DEBUG c.b.utils.SeleniumMethodUtils - getURLFromCommandExecutor: Found url: https://hub-use.browserstack.com/wd/hub
+11:27:54.794 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse data from processes. Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getFormattedDataFromProcesses(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:1213)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1001)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+11:27:54.794 [TestOne@0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+11:27:54.816 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"19d8d35b-b40a-4b8c-b200-263b0b38a246","buildIdentifier":"09-Dec-11:27","testhub_uuid":"oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"NDovhoshyyaL","measures":{"sdk:setup":3148},"productUsage":{"testObservability":{"buildHashedId":"oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionName":true,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"os":"Windows","browserVersion":"127","browser":"Chrome","device":null,"osVersion":"11","platformCaps":{"os":"Windows","osVersion":11,"browserVersion":127,"browserName":"Chrome"},"platformString":"Windows, 11, Chrome, 127","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"testng","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":false,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"percyBuildId":null,"product":"[automate]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{"ret-org.openqa.selenium.remote.RemoteWebDriver":227,"retransformClasses":227},"userFramework":"testng","detectedDependencies":"testng","referrer":"testng-javaagent\/1.26.4","locationTrigger":"onFinish","language_framework":"java_testng","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:27:55.063 [TestOne@0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+11:27:55.949 [Thread-0] DEBUG c.browserstack.BrowserStackJavaAgent - Starting final execution
+11:27:55.950 [Thread-0] DEBUG c.b.u.ObservabilityUtilityMethods - Processing batch requests with type: Global
+11:27:55.950 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [ TESTHUB ] Processing Request Kind stopBuildUpstream
+11:27:55.950 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k/stop with request size 65
+11:27:55.950 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k/stop with request size 65
+11:27:56.023 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+11:27:56.024 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+11:27:56.024 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+11:27:56.024 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - Observability Stop request failed. Retrying.. Exception: com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at com.sun.proxy.$Proxy2.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+11:27:56.155 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+11:27:56.155 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [requestToTestOps] Sending Observability request: PUT api/v1/builds/oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k/stop with request size 65
+11:27:56.155 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest] Sending request: PUT https://collector-observability.browserstack.com/api/v1/builds/oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k/stop with request size 65
+11:27:56.188 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [makeRequest]: Response code: 401
+11:27:56.189 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - requestToTestOps: Response code: 401
+11:27:56.189 [Thread-0] DEBUG c.browserstack.testOps.RequestUtils - [OBSERVABILITY] Non-200 Response 401
+11:27:56.189 [Thread-0] DEBUG c.browserstack.utils.LogReportingAPI - 
+[2024-12-09T17:27:56.189823100Z][ TESTHUB ] Exception in stop build request : com.browserstack.testOps.RequestException: Non 200 response
+	at com.browserstack.testOps.RequestException.non200(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOps(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.requestToTestOpsString(Unknown Source)
+	at com.browserstack.testOps.RequestUtils.stop(Unknown Source)
+	at com.browserstack.testOps.Listener.onComplete(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.browserstack.utils.ConditionalInvocationHandler.invoke(Unknown Source)
+	at com.sun.proxy.$Proxy2.onComplete(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+
+11:27:56.321 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event Observability_Crash_Report_Upload response - OK
+11:27:56.323 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Unable to parse data from processes. Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.getFormattedDataFromProcesses(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent$FinalExecution.run(Unknown Source)
+
+11:27:56.323 [Thread-0] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+11:27:56.327 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"9LcPkawe8ipxfQpQcG4L","userName":"nazardovhoshyya_7xTzMr","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"19d8d35b-b40a-4b8c-b200-263b0b38a246","buildIdentifier":"09-Dec-11:27","testhub_uuid":"oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":false,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"NDovhoshyyaL","measures":{"sdk:setup":3148},"productUsage":{"testObservability":{"buildHashedId":"oddmtrwzkh6wbruq6p5x9nnhxlwwfixhsjvk0y5k","manuallySet":true,"enabled":false}},"browserStackConfig":{"browserstackLocal":false,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"MANUAL","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionName":true,"skipSessionStatus":false,"serenityOverridePlugin":false},"platforms":[{"capabilities":{},"os":"Windows","browserVersion":"127","browser":"Chrome","device":null,"osVersion":"11","platformCaps":{"os":"Windows","osVersion":11,"browserVersion":127,"browserName":"Chrome"},"platformString":"Windows, 11, Chrome, 127","customVariables":"****"}],"parallelsPerPlatform":1,"framework":"testng","accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":false,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"percyBuildId":null,"product":"[automate]","buildName":"build name from yml","os":"Windows 10","languageVersion":"11.0.13","appiumVersion":"","frameworkDetectionInstrumentation":{"ret-org.openqa.selenium.remote.RemoteWebDriver":227,"retransformClasses":227},"userFramework":"testng","detectedDependencies":"testng","referrer":"testng-javaagent\/1.26.4","locationTrigger":"BSTACK_BUILD_END","language_framework":"java_testng","detectedFramework":"none","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.25.0","seleniumVersion":"4.25.0"}}
+11:27:56.528 [Thread-0] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful response - {"message":"SDK Event recorded successfully"}
+11:27:57.011 [Thread-0] DEBUG c.browserstack.utils.UtilityMethods - Browserstack Gradle Config File does not exist.

@@ -1,0 +1,24 @@
+userName: ${BROWSERSTACK_USER}
+accessKey: ${BROWSERSTACK_KEY}
+
+buildName: build name from yml
+buildIdentifier: ${DATE_TIME}
+
+framework: testng
+
+testContextOptions:
+  skipSessionName: true
+  skipSessionStatus: false
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: 127
+
+parallelsPerPlatform: 1
+browserstackLocal: false
+debug: false
+networkLogs: false
+consoleLogs: errors
+testObservability: false
