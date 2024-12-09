@@ -59,6 +59,9 @@ public class BsSdkTest {
         System.out.println("Config: " + System.getProperty("config"));
         System.out.println("Groups: " + System.getProperty("groups"));
         System.out.println("browserstack.config: " + System.getProperty("browserstack.config"));
+        System.out.println("BuildUrl: " + System.getProperty("buildUrl"));
+        System.out.println("Property file one: " + System.getProperty("propone"));
+        System.out.println("Property file three: " + System.getProperty("propthree"));
 
     }
 
