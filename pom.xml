@@ -33,8 +33,8 @@
                 <version>3.5.2</version>
                 <configuration>
 <!--                    <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>-->
-<!--                    <argLine>-javaagent:"/var/jenkins_home/.m2/repository/com/browserstack/browserstack-java-sdk/1.26.4/browserstack-java-sdk-1.26.4.jar"</argLine>-->
-                    <argLine>-javaagent:"C:\Users\Admin\.m2\repository\com\browserstack\browserstack-java-sdk\1.26.4\browserstack-java-sdk-1.26.4.jar"</argLine>
+                    <argLine>-javaagent:"/var/jenkins_home/.m2/repository/com/browserstack/browserstack-java-sdk/1.26.4/browserstack-java-sdk-1.26.4.jar"</argLine>
+<!--                    <argLine>-javaagent:"C:\Users\Admin\.m2\repository\com\browserstack\browserstack-java-sdk\1.26.4\browserstack-java-sdk-1.26.4.jar"</argLine>-->
 
                     <includes>
                         <include>*.*</include>
