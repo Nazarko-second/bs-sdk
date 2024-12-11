@@ -1,3 +1,4 @@
+import configuration.SetupConfiguration;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -52,16 +53,18 @@ public class BsSdkTest {
             return;
         }
 
+        System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
+
         driver.get("https://www.google.com/");
-        System.out.println("CONFIG_DATA");
-        System.out.println("Property file: " + System.getProperty("config"));
-        System.out.println("qTest integration: " + System.getProperty("qTest"));
-        System.out.println("Config: " + System.getProperty("config"));
-        System.out.println("Groups: " + System.getProperty("groups"));
-        System.out.println("browserstack.config: " + System.getProperty("browserstack.config"));
-        System.out.println("BuildUrl: " + System.getProperty("buildUrl"));
-        System.out.println("Property file one: " + System.getProperty("propone"));
-        System.out.println("Property file three: " + System.getProperty("propthree"));
+//        System.out.println("CONFIG_DATA inside test");
+//        System.out.println("Property file: " + System.getProperty("config"));
+//        System.out.println("qTest integration: " + System.getProperty("qTest"));
+//        System.out.println("Config: " + System.getProperty("config"));
+//        System.out.println("Groups: " + System.getProperty("groups"));
+//        System.out.println("browserstack.config: " + System.getProperty("browserstack.config"));
+//        System.out.println("BuildUrl: " + System.getProperty("buildUrl"));
+//        System.out.println("Browser: " + System.getProperty("browser"));
+//        System.out.println("Windows: " + System.getProperty("os"));
 
     }
 
