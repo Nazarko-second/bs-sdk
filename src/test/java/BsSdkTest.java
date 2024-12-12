@@ -3,8 +3,10 @@ import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.ITest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+import utils.BaseUITest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -12,10 +14,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class BsSdkTest {
+public class BsSdkTest extends BaseUITest implements ITest {
 
-    private static final String BS_USER = "nazardovhoshyya_7xTzMr";
-    private static final String BS_KEY = "9LcPkawe8ipxfQpQcG4L";
+    @Override
+    public String getTestName() {
+        return testName.get();
+    }
+    private static final String BS_USER = System.getProperty("BROWSERSTACK_USER");
+    private static final String BS_KEY = System.getProperty("BROWSERSTACK_KEY");
+
     private static final String BS_CONNECTION_URL = "https://" + BS_USER + ":" + BS_KEY  + "@hub-cloud.browserstack.com/wd/hub";
 
     static WebDriver driver;

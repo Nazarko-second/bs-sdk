@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 public class BaseTest {
 
     private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
-
+    protected ThreadLocal<String> testName = new ThreadLocal<>();
 
     @BeforeMethod(alwaysRun = true)
     public void beforeWithData(Object[] data, Method method) {
