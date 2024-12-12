@@ -17,6 +17,7 @@ public class ProjectConfiguration {
 
 
     public static Properties loadProperties() {
+        LOGGER.info("loadProperties() in ProjectConfiguration");
         LOGGER.info("CONFIG_DATA in Project Configuration");
         LOGGER.info("Property file: {}", PROPERTIES_FILE);
         LOGGER.info("qTest integration: {}", System.getProperty("qTest"));
@@ -39,6 +40,7 @@ public class ProjectConfiguration {
     }
 
     public static String getConfigProperty(String fieldName) {
+        LOGGER.info("getConfigProperty() in ProjectConfiguration");
         String result = null;
 
         if (System.getProperty(fieldName) != null)
