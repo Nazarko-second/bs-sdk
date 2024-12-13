@@ -15,8 +15,9 @@ public class FileManager {
     public static String OUTPUT_DIR = getOutputDir();
 
     public static String getOutputDir() {
+        LOGGER.info("getOutputDir() in FileManager");
         String directory = System.getProperty("user.dir") + File.separator + "target" + File.separator + (ProjectConfiguration.isPropertySet("Jenkins") ? "report" : System.nanoTime());
-        System.setProperty("OUTPUT_DIR", directory);
+//        System.setProperty("OUTPUT_DIR", directory);
         //create output dir
         try {
             FileUtils.forceMkdir(new File(directory));
