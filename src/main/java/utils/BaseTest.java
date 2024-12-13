@@ -32,11 +32,11 @@ public class BaseTest {
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {
         logger.info("Start of BaseTest @BeforeSuite");
-        logger.info("CONFIG_DATA in BaseTest");
-        logger.info("qTest integration: {}", System.getProperty("qTest"));
-        logger.info("Config: {}", System.getProperty("config"));
-        logger.info("Groups: {}", System.getProperty("groups"));
-        logger.info("browserstack.config: {}", System.getProperty("browserstack.config"));
+//        logger.info("CONFIG_DATA in BaseTest");
+//        logger.info("qTest integration: {}", System.getProperty("qTest"));
+//        logger.info("Config: {}", System.getProperty("config"));
+//        logger.info("Groups: {}", System.getProperty("groups"));
+//        logger.info("browserstack.config: {}", System.getProperty("browserstack.config"));
         logger.info("End of BaseTest @BeforeSuite");
     }
 
