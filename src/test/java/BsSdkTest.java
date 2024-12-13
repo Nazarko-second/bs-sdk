@@ -71,7 +71,7 @@ public class BsSdkTest extends BaseUITest implements ITest {
 //        System.out.println("browserstack.config: " + System.getProperty("browserstack.config"));
 //        System.out.println("BuildUrl: " + System.getProperty("buildUrl"));
 //        System.out.println("Browser: " + System.getProperty("browser"));
-//        System.out.println("Windows: " + System.getProperty("os"));
+//        System.out.println("Windows: " + System.getProperty("os"));;
 
     }
 
