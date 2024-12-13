@@ -1,4 +1,5 @@
 import configuration.SetupConfiguration;
+import logging.ReporterManager;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -22,9 +23,8 @@ public class BsSdkTest extends BaseUITest implements ITest {
     }
     private static final String BS_USER = System.getProperty("BROWSERSTACK_USER");
     private static final String BS_KEY = System.getProperty("BROWSERSTACK_KEY");
-
     private static final String BS_CONNECTION_URL = "https://" + BS_USER + ":" + BS_KEY  + "@hub-cloud.browserstack.com/wd/hub";
-
+    public final static ReporterManager reporter = ReporterManager.Instance;
     static WebDriver driver;
     @Test(testName = "Test name here",
             groups = {"smoke"})
@@ -60,7 +60,7 @@ public class BsSdkTest extends BaseUITest implements ITest {
             return;
         }
 
-        System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
+//        System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
 
         driver.get("https://www.google.com/");
 
