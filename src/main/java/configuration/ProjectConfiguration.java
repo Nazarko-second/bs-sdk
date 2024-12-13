@@ -39,7 +39,7 @@ public class ProjectConfiguration {
     }
 
     public static String getConfigProperty(String fieldName) {
-        LOGGER.info("getConfigProperty() in ProjectConfiguration");
+//        LOGGER.info("getConfigProperty() in ProjectConfiguration");
         String result = null;
 
         if (System.getProperty(fieldName) != null)

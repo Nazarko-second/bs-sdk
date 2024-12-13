@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" parallel="methods" thread-count="1">
+    <test name="Test">
+        <groups>
+            <run>
+                <include name="regression"/>
+                <include name="criticalPath"/>
+                <include name="sanity"/>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+
+            <class name="BsSdkTest" />
+
+        </classes>
+    </test> <!-- test -->
+</suite> <!-- suite -->
