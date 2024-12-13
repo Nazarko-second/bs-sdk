@@ -61,7 +61,6 @@ public class BsSdkTest extends BaseUITest implements ITest {
 //            System.out.println("Oops");
 //            return;
 //        }
-        reporter.info("REPORT_MESSAGE");
         System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
 
 //        driver.get("https://www.google.com/");
