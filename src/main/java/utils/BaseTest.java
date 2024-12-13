@@ -1,6 +1,6 @@
 package utils;
 
-import logging.ReporterManager;
+//import logging.ReporterManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
@@ -12,15 +12,15 @@ import java.lang.reflect.Method;
 
 
 public class BaseTest {
-    public ReporterManager reporter;
+//    public ReporterManager reporter;
     private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
     protected ThreadLocal<String> testName = new ThreadLocal<>();
 
     @BeforeMethod(alwaysRun = true)
     public void beforeWithData(Object[] data, Method method) {
         logger.info("Start of BaseTest @BeforeMethod: {}", method.getName());
-        reporter = ReporterManager.Instance;
-        reporter.startReporting(method, data);
+//        reporter = ReporterManager.Instance;
+//        reporter.startReporting(method, data);
         logger.info("End of BaseTest @BeforeMethod");
     }
 
