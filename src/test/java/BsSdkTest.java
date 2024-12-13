@@ -21,11 +21,13 @@ public class BsSdkTest extends BaseUITest implements ITest {
     public String getTestName() {
         return testName.get();
     }
+
     private static final String BS_USER = System.getProperty("BROWSERSTACK_USER");
     private static final String BS_KEY = System.getProperty("BROWSERSTACK_KEY");
-    private static final String BS_CONNECTION_URL = "https://" + BS_USER + ":" + BS_KEY  + "@hub-cloud.browserstack.com/wd/hub";
+    private static final String BS_CONNECTION_URL = "https://" + BS_USER + ":" + BS_KEY + "@hub-cloud.browserstack.com/wd/hub";
     public final static ReporterManager reporter = ReporterManager.Instance;
     static WebDriver driver;
+
     @Test(testName = "Test name here",
             groups = {"smoke"})
     public static void TestOne() {
@@ -59,7 +61,7 @@ public class BsSdkTest extends BaseUITest implements ITest {
 //            System.out.println("Oops");
 //            return;
 //        }
-
+        reporter.info("REPORT_MESSAGE");
         System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
 
 //        driver.get("https://www.google.com/");
