@@ -62,7 +62,7 @@ public class BsSdkTest extends BaseUITest implements ITest {
 
         System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
 
-        driver.get("https://www.google.com/");
+//        driver.get("https://www.google.com/");
 //        System.out.println("CONFIG_DATA inside test");
 //        System.out.println("Property file: " + System.getProperty("config"));
 //        System.out.println("qTest integration: " + System.getProperty("qTest"));
