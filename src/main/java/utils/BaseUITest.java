@@ -16,11 +16,6 @@ public class BaseUITest extends BaseTest{
     public void beforeWithData(Object[] data, Method method) {
         logger.info("Start of BeforeMethod in Base UI Test");
         super.beforeWithData(data, method);
-        logger.info("CONFIG_DATA in BaseUITest");
-        logger.info("qTest integration: {}", System.getProperty("qTest"));
-        logger.info("Config: {}", System.getProperty("config"));
-        logger.info("Groups: {}", System.getProperty("groups"));
-        logger.info("browserstack.config: {}", System.getProperty("browserstack.config"));
         logger.info("End of BeforeMethod in Base UI Test");
     }
 
