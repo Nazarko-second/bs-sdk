@@ -12,6 +12,7 @@ public class SessionManager {
     private static Properties sessionProperties = new Properties();
 
     public static String getSessionID() {
+        logger.info("getSessionID() in SessionManager");
         if(sessionProperties.get("SESSION_ID") == null) {
             sessionProperties.put("SESSION_ID", getCurDateTime());
             logger.info("Session ID: " + (String) sessionProperties.get("SESSION_ID"));

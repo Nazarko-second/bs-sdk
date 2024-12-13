@@ -32,6 +32,7 @@ public class ReporterManager {
     public static String REPORT_FILE_LOCATION = FileManager.OUTPUT_DIR + File.separator + "Report" + (ProjectConfiguration.isPropertySet("Jenkins") ? "" : SessionManager.getSessionID()) + ".html";
 
     private synchronized static ExtentReports getInstance() {
+        logger.info("getInstance() in ReporterManager");
         if (extent == null) {
             logger.info("Report creation: " + REPORT_FILE_LOCATION);
             extent = new ExtentReports(REPORT_FILE_LOCATION, true, NetworkMode.ONLINE);
@@ -40,6 +41,7 @@ public class ReporterManager {
     }
 
     public void startReporting(Method m, Object[] data) {
+        logger.info("startReporting() in ReporterManager");
         logger.info("Started test '" + m.getName() + "'");
         startTest(m, "Test name", "Test description");
 //        ExtentReports report = getInstance();
@@ -63,6 +65,7 @@ public class ReporterManager {
     }
 
     public synchronized Map<Long, ExtentTest> startTest(Method m, String testName, String testDescription) {
+        logger.info("startTest() in ReporterManager");
         Long threadID = Thread.currentThread().getId();
         ExtentTest test = getInstance().startTest(testName, testDescription);
         testThread.put(threadID, test);
