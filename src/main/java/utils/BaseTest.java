@@ -1,5 +1,6 @@
 package utils;
 
+import logging.ReporterManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
@@ -11,14 +12,15 @@ import java.lang.reflect.Method;
 
 
 public class BaseTest {
-
+    public ReporterManager reporter;
     private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
     protected ThreadLocal<String> testName = new ThreadLocal<>();
 
     @BeforeMethod(alwaysRun = true)
     public void beforeWithData(Object[] data, Method method) {
         logger.info("Start of BaseTest @BeforeMethod: {}", method.getName());
-        // do stuff
+        reporter = ReporterManager.Instance;
+        reporter.startReporting(method, data);
         logger.info("End of BaseTest @BeforeMethod");
     }
 
@@ -32,11 +34,11 @@ public class BaseTest {
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {
         logger.info("Start of BaseTest @BeforeSuite");
-        logger.info("CONFIG_DATA in BaseTest");
-        logger.info("qTest integration: {}", System.getProperty("qTest"));
-        logger.info("Config: {}", System.getProperty("config"));
-        logger.info("Groups: {}", System.getProperty("groups"));
-        logger.info("browserstack.config: {}", System.getProperty("browserstack.config"));
+//        logger.info("CONFIG_DATA in BaseTest");
+//        logger.info("qTest integration: {}", System.getProperty("qTest"));
+//        logger.info("Config: {}", System.getProperty("config"));
+//        logger.info("Groups: {}", System.getProperty("groups"));
+//        logger.info("browserstack.config: {}", System.getProperty("browserstack.config"));
         logger.info("End of BaseTest @BeforeSuite");
     }
 
