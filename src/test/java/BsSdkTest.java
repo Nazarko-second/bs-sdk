@@ -60,7 +60,7 @@ public class BsSdkTest extends BaseUITest implements ITest {
             return;
         }
 
-//        System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
+        System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
 
         driver.get("https://www.google.com/");
 
