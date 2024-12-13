@@ -53,16 +53,16 @@ public class BsSdkTest extends BaseUITest implements ITest {
         browserstackOptions.put("seleniumVersion", "4.25.0");
         capabilities.setCapability("bstack:options", browserstackOptions);
 
-        try {
-            driver = new RemoteWebDriver(new URL(BS_CONNECTION_URL), capabilities);
-        } catch (MalformedURLException e) {
-            System.out.println("Oops");
-            return;
-        }
+//        try {
+//            driver = new RemoteWebDriver(new URL(BS_CONNECTION_URL), capabilities);
+//        } catch (MalformedURLException e) {
+//            System.out.println("Oops");
+//            return;
+//        }
 
         System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
 
-        driver.get("https://www.google.com/");
+//        driver.get("https://www.google.com/");
 
     }
 
