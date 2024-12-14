@@ -1,5 +1,4 @@
 import configuration.SetupConfiguration;
-import logging.ReporterManager;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -21,13 +20,12 @@ public class BsSdkTest extends BaseUITest implements ITest {
     public String getTestName() {
         return testName.get();
     }
-
     private static final String BS_USER = System.getProperty("BROWSERSTACK_USER");
     private static final String BS_KEY = System.getProperty("BROWSERSTACK_KEY");
-    private static final String BS_CONNECTION_URL = "https://" + BS_USER + ":" + BS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-    public final static ReporterManager reporter = ReporterManager.Instance;
-    static WebDriver driver;
 
+    private static final String BS_CONNECTION_URL = "https://" + BS_USER + ":" + BS_KEY  + "@hub-cloud.browserstack.com/wd/hub";
+
+    static WebDriver driver;
     @Test(testName = "Test name here",
             groups = {"smoke"})
     public static void TestOne() {
@@ -55,15 +53,25 @@ public class BsSdkTest extends BaseUITest implements ITest {
         browserstackOptions.put("seleniumVersion", "4.25.0");
         capabilities.setCapability("bstack:options", browserstackOptions);
 
-//        try {
-//            driver = new RemoteWebDriver(new URL(BS_CONNECTION_URL), capabilities);
-//        } catch (MalformedURLException e) {
-//            System.out.println("Oops");
-//            return;
-//        }
+        try {
+            driver = new RemoteWebDriver(new URL(BS_CONNECTION_URL), capabilities);
+        } catch (MalformedURLException e) {
+            System.out.println("Oops");
+            return;
+        }
+
         System.out.println("SAMPLE:" + SetupConfiguration.SAMPLE);
 
 //        driver.get("https://www.google.com/");
+//        System.out.println("CONFIG_DATA inside test");
+//        System.out.println("Property file: " + System.getProperty("config"));
+//        System.out.println("qTest integration: " + System.getProperty("qTest"));
+//        System.out.println("Config: " + System.getProperty("config"));
+//        System.out.println("Groups: " + System.getProperty("groups"));
+//        System.out.println("browserstack.config: " + System.getProperty("browserstack.config"));
+//        System.out.println("BuildUrl: " + System.getProperty("buildUrl"));
+//        System.out.println("Browser: " + System.getProperty("browser"));
+//        System.out.println("Windows: " + System.getProperty("os"));;
 
     }
 
