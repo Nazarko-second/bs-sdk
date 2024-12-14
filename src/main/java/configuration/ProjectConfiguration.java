@@ -12,9 +12,11 @@ public class ProjectConfiguration {
     static public String CONFIG_FILE = System.getProperty("config");
     static String PROPERTIES_FILE = "src/test/automation/config/" + ((CONFIG_FILE == null) ? "default" : CONFIG_FILE) + ".properties";
     static public ThreadLocal<Properties> threadProperties = new ThreadLocal<Properties>();
-    static private Properties localProps = loadProperties();
+    static private Properties localProps;
 
-
+    static {
+        localProps = loadProperties();
+    }
 
     public static Properties loadProperties() {
         String caller = new Throwable().getStackTrace()[2].getMethodName();
